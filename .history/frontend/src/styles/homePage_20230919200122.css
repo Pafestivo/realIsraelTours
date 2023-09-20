@@ -1,0 +1,14 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px 120px;
+  max-width: 1100px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.info-block {
+  margin: 10px 0;
+}

@@ -1,0 +1,7 @@
+.pageContainer {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #dcd3d3;
+}

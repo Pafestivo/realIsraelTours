@@ -1,0 +1,14 @@
+{
+  "name": "realisraeltours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev --prefix frontend",
+    "build": "next build --prefix frontend",
+    "start": "next start --prefix frontend",
+    "lint": "next lint --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC"
+}

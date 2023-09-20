@@ -1,0 +1,104 @@
+.header {
+  position: sticky;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 40px;
+  z-index: 1000;
+}
+
+.headerLogo {
+  width: 200px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  font-size: 1.1em;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 20px;
+}
+
+button {
+  background-color: var(--accent-orange);
+  border: none;
+  font-size: 1.15em;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.close-button {
+  font-size: 1.5em;  /* Increase size for tap-ability */
+  background: none;
+  border: none;
+  color: white;  /* Make it the same color as the text for harmony */
+  cursor: pointer;
+  position: absolute;  /* Absolute position within the navbar */
+  top: 15px;  /* Position from the top */
+  right: 15px;  /* Position from the right */
+  padding: 5px;  /* A little padding to make it more tap-able */
+  z-index: 10;  /* Just in case, to make it appear above all other items */
+}
+
+@media screen and (min-width: 769px) {
+  .close-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    font-size: 1.3em;
+    flex-direction: column;
+    background-color: rgba(255, 192, 63, 0.9);
+    color: black;
+    transition: right 0.3s ease-in-out;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 20px;
+    padding: 110px 0; /* Reduced right/left padding */
+    font-size: 1.4em; /* Increased font size for better readability */
+    background-color: #333;  /* Darker background */
+    color: white; /* Keep text color white for contrast */
+    row-gap: 30px; /* Increased gap between rows for breathing space */
+  }
+
+  /* Adding a hover effect to indicate interactivity */
+  .navbar a:hover,
+  .navbar button:hover {
+    color: var(--accent-orange); /* Add your own accent color */
+  }
+
+  .navbar.open {
+    right: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Media query for very large screens */
+@media screen and (min-width: 1440px) {
+  .navbar {
+    font-size: 1.5em;
+  }
+
+  button {
+    font-size: 1.5em;
+  }
+}

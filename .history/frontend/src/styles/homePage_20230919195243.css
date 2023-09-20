@@ -1,0 +1,10 @@
+.pageContainer {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  text-align: center;
+  color: var(--main-text-color);
+}
