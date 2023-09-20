@@ -1,0 +1,29 @@
+.destinations-div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-self: center;
+  color: #4b5e5b;
+}
+
+.destinations-div h1 {
+  color: black;
+}
+
+.destinations-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.destinations-options > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f8f8f8; */
+  background-color: red;
+  width: 160px;
+  height: 45px;
+}

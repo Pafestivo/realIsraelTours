@@ -1,0 +1,12 @@
+.destinations-div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-self: center;
+  color: #4b5e5b;
+}
+
+.destinations-div h1 {
+  color: black;
+}

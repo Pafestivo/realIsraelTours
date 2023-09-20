@@ -1,0 +1,22 @@
+.tripCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+  max-width: 300px;
+}
+
+.tripCard:hover h2,
+.tripCard:hover p {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.tripCard:hover .tripIcon {
+  text-shadow: 5px 5px 10px #000000;
+}
+
+.tripIcon {
+  width: 120px;
+  height: 120px;
+}

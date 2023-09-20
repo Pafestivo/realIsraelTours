@@ -1,0 +1,39 @@
+.tripCard {
+  display: grid;
+  grid-template-rows: 2fr 0.5fr 0.5fr;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+  row-gap: 15px;
+  max-width: 300px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tripCard h2, .tripCard p {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tripIcon {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+
+.tripCard:hover {
+  transform: scale(1.1)
+}
+
+.tripCard:hover h2,
+.tripCard:hover p {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.tripCard:hover .tripIcon {
+  border: 1px solid black;
+}

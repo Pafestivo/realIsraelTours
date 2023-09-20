@@ -1,0 +1,17 @@
+.tripCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.tripCard:hover h1,
+.tripCard:hover p {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.tripIcon {
+  width: 120px;
+  height: 120px;
+}
