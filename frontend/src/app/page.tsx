@@ -5,7 +5,6 @@ import ScrollArrow from "@/components/ScrollArrow";
 import TripCard from "@/components/TripCard";
 import Destinations from "@/components/Destinations";
 import CustomerReviews from "@/components/CustomerReviews";
-import Image from "next/image";
 import TravelWithConfidence from "@/components/TravelWithConfidence";
 import Footer from "@/components/Footer";
 import MobileStickyFooter from "@/components/MobileStickyFooter";
@@ -21,11 +20,9 @@ export default function Home() {
             <span></span>Start Your Journey
           </button>
           <div className="cta-svg-container">
-            <Image
+            <img
               src="/Accredited-logo-trip-advisor-22.svg"
               alt="trip adviser logo"
-              width={120}
-              height={120}
             />
           </div>
           <ScrollArrow />
