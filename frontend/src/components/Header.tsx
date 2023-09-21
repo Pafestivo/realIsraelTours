@@ -5,7 +5,7 @@ import "@/styles/header.css";
 import Link from "next/link";
 
 interface HeaderProps {
-  currentlyActivePage: string;
+  currentlyActivePage?: string;
 }
 
 const Header = ({ currentlyActivePage }: HeaderProps) => {
@@ -51,7 +51,7 @@ const Header = ({ currentlyActivePage }: HeaderProps) => {
         </Link>
         <Link
           className={currentlyActivePage === "Tours" ? "activated" : ""}
-          href="/"
+          href="/tours"
         >
           Tours
         </Link>

@@ -1,0 +1,23 @@
+.trip-types {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 80px;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+  place-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .trip-types {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .trip-types {
+    width: 1800px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-x: visible;
+  }
+}

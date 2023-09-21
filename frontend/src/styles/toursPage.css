@@ -1,0 +1,39 @@
+.page-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  row-gap: 100px;
+  flex-direction: column;
+}
+
+.page-container h1 {
+  font-size: 4em;
+}
+
+.highlighted {
+  border-bottom: 3px solid var(--accent-orange);
+  color: var(--accent-orange);
+}
+
+.trip-cards-container {
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: visible;
+}
+
+@media screen and (max-width: 768px) {
+  .page-container {
+    padding-top: 200px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+}

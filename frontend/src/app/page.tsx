@@ -8,12 +8,13 @@ import CustomerReviews from "@/components/CustomerReviews";
 import TravelWithConfidence from "@/components/TravelWithConfidence";
 import Footer from "@/components/Footer";
 import MobileStickyFooter from "@/components/MobileStickyFooter";
+import AllTripCards from "@/components/AllTripCards";
 
 export default function Home() {
   return (
     <div>
       <Header currentlyActivePage="Home" />
-      <div className="cta-div">
+      <div className="background-video-container">
         <div className="content">
           <h1>Custom made Israeli adventures</h1>
           <button className="animated-cta">
@@ -58,30 +59,8 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="tripTypes">
-          <TripCard
-            image="/Geopolitical-icon.png"
-            tripName="Geopolitical Tours"
-            tripDescription="Dive into Israel's political complexity by engaging with diverse perspectives."
-          />
-
-          <TripCard
-            image="/Religious-and-educational.png"
-            tripName="Religious, Educational And Community Tours"
-            tripDescription="Adventure through a spiritual journey in the holy land."
-          />
-
-          <TripCard
-            image="/Egypt-and-Jordan.png"
-            tripName="Egypt & Jordan"
-            tripDescription="Take the ultimate Middle East tour."
-          />
-
-          <TripCard
-            image="/classic-tours.png"
-            tripName="Classic Tours"
-            tripDescription="Treat your crew to their perfect Israel adventure"
-          />
+        <section className="trip-types-section">
+          <AllTripCards />
         </section>
 
         <section className="destinations">
