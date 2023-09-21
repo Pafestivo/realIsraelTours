@@ -1,5 +1,33 @@
-.container {
+.container-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-height: 600px;
+  width: 90vw;
   margin: 50px auto;
+}
+
+.container-wrapper::before,
+.container-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.container-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #4b5a58, rgba(255, 255, 255, 0));
+}
+
+.container-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #4b5e5b, rgba(255, 255, 255, 0));
+}
+
+.container {
   display: flex;
   flex-direction: row;
   overflow-x: scroll;
@@ -12,26 +40,21 @@
   align-items: flex-start;
   cursor: grab;
   padding-bottom: 15px;
+  position: relative;
 }
 
 .container::-webkit-scrollbar {
-  height: 6px;
-  background: #e8e8e8;
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.container {
+  scrollbar-width: none;
+  -ms-overflow-style: none;  /* IE and Edge */
 }
 
 .review-box::-webkit-scrollbar {
   width: 0;  /* Make it invisible */
-}
-
-.container::-webkit-scrollbar-thumb {
-  background: #3d3d3d;
-  border-radius: 2px;
-}
-
-/* For Firefox */
-.container {
-  scrollbar-color: #3d3d3d #ccc;
-  scrollbar-width: thin;
 }
 
 .review-box {

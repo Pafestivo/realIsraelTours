@@ -33,20 +33,22 @@ const CustomerReviews = () => {
   return (
     <div>
       <h1>Customer Reviews</h1>
-      <div
-        className="container"
-        onMouseDown={handleMouseDown}
-        onMouseLeave={handleMouseLeave}
-        onMouseUp={handleMouseUp}
-        onMouseMove={handleMouseMove}
-      >
-        {reviewsArray.map((review, index) => (
-          <div key={index} className="review-box">
-            <p className="review">{review.review}</p>
-            <p className="review-date">{review.date}</p>
-            <h3 className="review-name">From: {review.name}</h3>
-          </div>
-        ))}
+      <div className="container-wrapper">
+        <div
+          className="container"
+          onMouseDown={handleMouseDown}
+          onMouseLeave={handleMouseLeave}
+          onMouseUp={handleMouseUp}
+          onMouseMove={handleMouseMove}
+        >
+          {reviewsArray.map((review, index) => (
+            <div key={index} className="review-box">
+              <p className="review">{review.review}</p>
+              <p className="review-date">{review.date}</p>
+              <h3 className="review-name">From: {review.name}</h3>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
