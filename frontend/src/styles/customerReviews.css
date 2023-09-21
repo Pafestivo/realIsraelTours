@@ -1,37 +1,44 @@
 .container {
   margin: 50px auto;
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-  max-height: 600px; 
+  max-height: 600px;
   width: 90vw;
-  gap: 20px; 
-  transition: scroll-left 0.3s ease;
+  gap: 20px;
+  transition: scroll-left 0.3s ease-in-out;
   overflow-y: hidden;
+  align-items: flex-start;
+  cursor: grab;
 }
 
 .review-box {
   flex: 0 0 auto;
   width: 500px;
   scroll-snap-align: start;
-  padding: 10px;
   box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  color: black;
+  background-color: #e8e8e8;
+  border-radius: 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: auto;
+  padding: 10px 20px;
+  max-height: calc(600px - 20px);
 }
 
-/* maybe remove the dots */
-.dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+.review-box p {
+  font-size: 0.9em;
+  font-style: italic;
 }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: grey;
-  margin: 5px;
+
+
+@media screen and (max-width: 768px) {
+  .review-box {
+    width: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
 }

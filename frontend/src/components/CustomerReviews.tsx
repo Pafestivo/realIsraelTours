@@ -30,14 +30,6 @@ const CustomerReviews = () => {
     e.currentTarget.scrollLeft = scrollLeft - walk;
   };
 
-  const handleDotClick = (index: number) => {
-    const container = document.querySelector(".container");
-    if (container) {
-      const box = container.children[index] as HTMLElement;
-      container.scrollLeft = box.offsetLeft;
-    }
-  };
-
   return (
     <div>
       <h1>Customer Reviews</h1>
@@ -50,20 +42,10 @@ const CustomerReviews = () => {
       >
         {reviewsArray.map((review, index) => (
           <div key={index} className="review-box">
-            <h3 className="review-name">{review.name}</h3>
-            <p className="review-date">{review.date}</p>
             <p className="review">{review.review}</p>
+            <p className="review-date">{review.date}</p>
+            <h3 className="review-name">From: {review.name}</h3>
           </div>
-        ))}
-      </div>
-      <div className="dots">
-        {" "}
-        {reviewsArray.map((_, index) => (
-          <span
-            key={index}
-            className="dot"
-            onClick={() => handleDotClick(index)}
-          ></span>
         ))}
       </div>
     </div>
