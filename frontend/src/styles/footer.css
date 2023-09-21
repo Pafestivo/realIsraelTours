@@ -1,0 +1,32 @@
+.footer {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 28px;
+  font-size: 35px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.social-icons > * {
+  cursor: pointer;
+}
+
+.trip-advisor-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-bottom: 60px
+  }
+}

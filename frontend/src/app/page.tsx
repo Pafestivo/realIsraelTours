@@ -9,6 +9,11 @@ import egpyt from "@/assets/Egypt-and-Jordan.png";
 import classicTours from "@/assets/classic-tours.png";
 import Destinations from "@/components/Destinations";
 import CustomerReviews from "@/components/CustomerReviews";
+import Image from "next/image";
+import tripAdvisorLogo from "@/assets/Accredited-logo-trip-advisor-22.svg";
+import TravelWithConfidence from "@/components/TravelWithConfidence";
+import Footer from "@/components/Footer";
+import MobileStickyFooter from "@/components/MobileStickyFooter";
 
 export default function Home() {
   return (
@@ -17,9 +22,16 @@ export default function Home() {
       <div className="cta-div">
         <div className="content">
           <h1>Custom made Israeli adventures</h1>
-          <button>
+          <button className="animated-cta">
             <span></span>Start Your Journey
           </button>
+          <div className="cta-svg-container">
+            <Image
+              src={tripAdvisorLogo}
+              alt="trip adviser logo"
+              layout="responsive"
+            />
+          </div>
           <ScrollArrow />
         </div>
         <BackgroundVideo />
@@ -88,6 +100,12 @@ export default function Home() {
         <section className="customer-reviews">
           <CustomerReviews />
         </section>
+
+        <section className="travel-with-confidence-section">
+          <TravelWithConfidence />
+        </section>
+        <Footer />
+        <MobileStickyFooter />
       </div>
     </div>
   );

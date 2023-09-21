@@ -36,17 +36,18 @@
   font-size: 5em;
 }
 
-.content button {
+.animated-cta {
   font-size: 1.4em;
   padding: 14px 40px;
   border-radius: 5px;
   z-index: 1;
   position: relative;
   overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 
 /* an hover effect for two arrows and then rectangle */
-.content button::before {
+.animated-cta::before {
   content: "";
   position: absolute;
   top: 0;
@@ -59,7 +60,7 @@
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
 
-.content button span {
+.animated-cta span {
   content: "";
   position: absolute;
   top: 0;
@@ -72,7 +73,7 @@
   clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
 
-.content button::after {
+.animated-cta::after {
   content: "";
   position: absolute;
   top: 0;
@@ -84,19 +85,19 @@
   z-index: -1;
 }
 
-.content button:hover::before {
+.animated-cta:hover::before {
   left: 100%; 
 }
 
-.content button:hover span {
+.animated-cta:hover span {
   left: 100%; 
 }
 
-.content button:hover::after {
+.animated-cta:hover::after {
   left: 0;
 }
 
-.content button:hover {
+.animated-cta:hover {
   color: white;
 }
 /* end of arrows effect */
@@ -150,6 +151,16 @@ h1 {
   justify-content: center;
 }
 
+.cta-svg-container {
+  width: 120px;
+  position: absolute;
+  bottom: 110px;
+}
+
+.travel-with-confidence-section {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 768px) {
   .content h1 {
     font-size: 3em;
@@ -166,6 +177,16 @@ h1 {
   .destinations {
     padding: 50px 20px;
   }
+  
+  .cta-svg-container {
+    width: 80px;
+    position: absolute;
+    bottom: 70px;
+  }
+
+  .animated-cta {
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -173,5 +194,11 @@ h1 {
     width: 130%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     overflow-x: visible;
+  }
+
+  .cta-svg-container {
+    width: 200px;
+    position: absolute;
+    bottom: 140px;
   }
 }

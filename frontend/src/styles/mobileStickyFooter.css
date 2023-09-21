@@ -1,0 +1,19 @@
+.sticky-footer {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.8em;
+  height: 50px;
+  z-index: 10;
+}
+
+.sticky-footer .btn1 {
+  background-color: #4b5e5b;
+  color: white;
+}
+
+.sticky-footer button {
+  border-radius: 0;
+}
