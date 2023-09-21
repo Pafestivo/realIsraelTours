@@ -21,7 +21,6 @@
   border-radius: 5px;
 }
 
-/* maybe remove the dots */
 .dots {
   display: flex;
   justify-content: center;

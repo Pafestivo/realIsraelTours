@@ -82,10 +82,7 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    gap: 40px;
-  }
-
-  .Destination-info p {
     text-align: center;
+    gap: 40px;
   }
 }
