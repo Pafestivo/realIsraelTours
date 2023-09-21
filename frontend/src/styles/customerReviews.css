@@ -11,7 +11,33 @@
   overflow-y: hidden;
   align-items: flex-start;
   cursor: grab;
+  padding-bottom: 15px;
 }
+
+.container::-webkit-scrollbar {
+  height: 6px;
+  background: #e8e8e8;
+}
+
+.review-box::-webkit-scrollbar {
+  width: 0;  /* Make it invisible */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+  border-radius: 2px;
+}
+
+/* For Firefox */
+.container {
+  scrollbar-color: #3d3d3d #ccc;
+  scrollbar-width: thin;
+}
+
+.review-box {
+  scrollbar-width: none; /* Make it invisible */
+}
+
 
 .review-box {
   flex: 0 0 auto;
@@ -26,6 +52,7 @@
   height: auto;
   padding: 10px 20px;
   max-height: calc(600px - 20px);
+  position: relative;
 }
 
 .review-box p {
