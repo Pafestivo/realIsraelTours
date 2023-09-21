@@ -34,7 +34,7 @@ section {
 }
 
 .mobile-only {
-  display: none;
+  display: none !important; 
 }
 
 .desktop-only {
@@ -55,6 +55,6 @@ section {
   }
 
   .desktop-only {
-    display: none;
+    display: none !important;
   }
 }
