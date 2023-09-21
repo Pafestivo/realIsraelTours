@@ -5,11 +5,6 @@ export const reviewsArray = [
     review: `“Can’t recommend Josh highly enough. From the mind blowing access he gave us, to his amazing knowledge of the region and its history, the trip with Josh was truly unbelievable.”`,
   },
   {
-    name: `Alan`,
-    date: `6.08.23`,
-    review: `“Was in Israel for a school trip with a group of students. Most of them had never gone to Israel, myself included! We had the opportunity to interact with most of the staff during the duration of our trip and everyone was so respectful, educated, and had the utmost priority of ensuring the best possible experience for us. Ron was our tour guide for our 11-day trip and he fit into our group perfectly. It's hard to get a group of 20 college students to listen to and respect you but we loved Ron right away. Josh is literally the walking internet. He provided us with a world of knowledge and gave us the opportunity to question him about everything and anything. You'll be in good hands! They managed our itinerary and scheduled our guest speakers. We got to speak with government officials, refugees, and journalists. It changed the whole experience of our trip. It was honestly life-changing and we all got to relax and take it in because they made the experience smooth and organized. They sure do know Israel and they sure do know tourists/world travelers. Walking away with so much knowledge and an immensely better understanding of Israel/Palestine/Lebanon/Syria/Gaza and their relations/histories. Book with them, you won't regret it. If I'm ever back in Israel again I will book with them again”`,
-  },
-  {
     name: `Jazmen`,
     date: `5.26.23`,
     review: `“Ron was our tour guide and he was the most amazing guide. He taught us all about the Israel and Palestinian conflict and answered hard questions and made a point to explain both perspectives to the best of his knowledge while making it clear he is an Israeli so this is his perspective and he can’t give the complete story. We were able to speak with Palestinians as well and hear their narrative which gave us the opportunity to be critical thinkers and think for ourselves. This was a life changing tour and I am so thankful I experience it.”`,
@@ -35,7 +30,12 @@ export const reviewsArray = [
     review: `“I went on a solo trip to Israel and it was one of the best decisions I've ever made. The tour guides were fantastic, especially Josh, who made sure I felt comfortable and safe throughout the trip. The sights, the food, the people—everything was perfect!”`,
   },
   {
-    name: `JohnDoe123`,
+    name: `Alan`,
+    date: `6.08.23`,
+    review: `“Was in Israel for a school trip with a group of students. Most of them had never gone to Israel, myself included! We had the opportunity to interact with most of the staff during the duration of our trip and everyone was so respectful, educated, and had the utmost priority of ensuring the best possible experience for us. Ron was our tour guide for our 11-day trip and he fit into our group perfectly. It's hard to get a group of 20 college students to listen to and respect you but we loved Ron right away. Josh is literally the walking internet. He provided us with a world of knowledge and gave us the opportunity to question him about everything and anything. You'll be in good hands! They managed our itinerary and scheduled our guest speakers. We got to speak with government officials, refugees, and journalists. It changed the whole experience of our trip. It was honestly life-changing and we all got to relax and take it in because they made the experience smooth and organized. They sure do know Israel and they sure do know tourists/world travelers. Walking away with so much knowledge and an immensely better understanding of Israel/Palestine/Lebanon/Syria/Gaza and their relations/histories. Book with them, you won't regret it. If I'm ever back in Israel again I will book with them again”`,
+  },
+  {
+    name: `Rahim`,
     date: `8.30.23`,
     review: `“Israel has always been on my bucket list and this trip did not disappoint. The historical sites were awe-inspiring and the local cuisine was to die for. Our guide, Lee, was very informative and made the trip extra special.”`,
   },
