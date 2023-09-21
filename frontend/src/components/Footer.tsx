@@ -3,7 +3,6 @@ import "@/styles/footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
-import tripAdvisorLogo from "@/assets/tripadvisor.png";
 import Image from "next/image";
 
 const Footer = () => {
@@ -28,8 +27,10 @@ const Footer = () => {
         >
           <Image
             className="trip-advisor-icon"
-            src={tripAdvisorLogo}
+            src="/tripadvisor.png"
             alt="trip advisor"
+            width={40}
+            height={40}
           />
         </a>
       </div>

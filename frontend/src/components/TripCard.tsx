@@ -1,9 +1,9 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import React from "react";
 import "@/styles/tripCard.css";
 
 interface tripCardProps {
-  image: StaticImageData;
+  image: string;
   tripName: string;
   tripDescription: string;
 }
@@ -11,7 +11,13 @@ interface tripCardProps {
 const TripCard = ({ image, tripName, tripDescription }: tripCardProps) => {
   return (
     <div className="tripCard">
-      <Image className="tripIcon" src={image} alt="tripIcon" />
+      <Image
+        className="tripIcon"
+        src={image}
+        alt="tripIcon"
+        width={130}
+        height={130}
+      />
       <h2>{tripName}</h2>
       <p>{tripDescription}</p>
     </div>

@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 export interface Destination {
   name: string;
   description: string;
-  image: StaticImageData;
+  image: string;
 }
 
 export interface Review {

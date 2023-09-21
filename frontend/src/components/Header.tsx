@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import logo from "@/assets/logo.png";
 import "@/styles/header.css";
 import Link from "next/link";
 
@@ -32,7 +31,13 @@ const Header = ({ currentlyActivePage }: HeaderProps) => {
   return (
     <div className={`header ${isScrolled ? "" : "transparent"}`}>
       <Link href="/">
-        <Image className="headerLogo" src={logo} alt="logo" />
+        <Image
+          className="headerLogo"
+          src="/logo.png"
+          alt="logo"
+          width={200}
+          height={(9 / 16) * 200}
+        />
       </Link>
       <div className={`navbar ${isMenuOpen ? "open" : ""}`}>
         <button onClick={toggleMenu} className="close-button">

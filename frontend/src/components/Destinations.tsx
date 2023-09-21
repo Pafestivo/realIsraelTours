@@ -39,7 +39,12 @@ const Destinations = () => {
           <h1>{activeTab.name}</h1>
           <p>{activeTab.description}</p>
         </div>
-        <Image src={activeTab.image} alt={activeTab.name} />
+        <Image
+          src={activeTab.image}
+          alt={activeTab.name}
+          width={500}
+          height={500}
+        />
       </div>
     </div>
   );

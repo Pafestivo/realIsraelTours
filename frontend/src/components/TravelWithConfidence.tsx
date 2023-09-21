@@ -1,7 +1,6 @@
 import React from "react";
 import "@/styles/travelWithConfidence.css";
 import Image from "next/image";
-import tripAdvisorLogo from "@/assets/Accredited-logo-trip-advisor-22.svg";
 import CheckMark from "./CheckMark";
 
 const TravelWithConfidence = () => {
@@ -9,9 +8,10 @@ const TravelWithConfidence = () => {
     <div className="travel-with-confidence-container">
       <div className="svg-container">
         <Image
-          src={tripAdvisorLogo}
+          src="/Accredited-logo-trip-advisor-22.svg"
           alt="trip advisor logo"
-          layout="responsive"
+          width={180}
+          height={180}
         />
       </div>
       <h1>Travel With Confidence</h1>

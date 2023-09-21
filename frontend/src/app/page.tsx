@@ -3,14 +3,9 @@ import "@/styles/homePage.css";
 import BackgroundVideo from "@/components/BackgroundVideo";
 import ScrollArrow from "@/components/ScrollArrow";
 import TripCard from "@/components/TripCard";
-import geoPoliticalIcon from "@/assets/Geopolitical-icon.png";
-import religious from "@/assets/Religious-and-educational.png";
-import egpyt from "@/assets/Egypt-and-Jordan.png";
-import classicTours from "@/assets/classic-tours.png";
 import Destinations from "@/components/Destinations";
 import CustomerReviews from "@/components/CustomerReviews";
 import Image from "next/image";
-import tripAdvisorLogo from "@/assets/Accredited-logo-trip-advisor-22.svg";
 import TravelWithConfidence from "@/components/TravelWithConfidence";
 import Footer from "@/components/Footer";
 import MobileStickyFooter from "@/components/MobileStickyFooter";
@@ -27,9 +22,10 @@ export default function Home() {
           </button>
           <div className="cta-svg-container">
             <Image
-              src={tripAdvisorLogo}
+              src="/Accredited-logo-trip-advisor-22.svg"
               alt="trip adviser logo"
-              layout="responsive"
+              width={120}
+              height={120}
             />
           </div>
           <ScrollArrow />
@@ -67,25 +63,25 @@ export default function Home() {
 
         <section className="tripTypes">
           <TripCard
-            image={geoPoliticalIcon}
+            image="/Geopolitical-icon.png"
             tripName="Geopolitical Tours"
             tripDescription="Dive into Israel's political complexity by engaging with diverse perspectives."
           />
 
           <TripCard
-            image={religious}
+            image="/Religious-and-educational.png"
             tripName="Religious, Educational And Community Tours"
             tripDescription="Adventure through a spiritual journey in the holy land."
           />
 
           <TripCard
-            image={egpyt}
+            image="/Egypt-and-Jordan.png"
             tripName="Egypt & Jordan"
             tripDescription="Take the ultimate Middle East tour."
           />
 
           <TripCard
-            image={classicTours}
+            image="/classic-tours.png"
             tripName="Classic Tours"
             tripDescription="Treat your crew to their perfect Israel adventure"
           />
