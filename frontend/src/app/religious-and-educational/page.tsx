@@ -18,6 +18,7 @@ const ReligiousAndEducational = () => {
 
       <section
         style={{
+          margin: "0 auto",
           background: "white",
         }}
       >

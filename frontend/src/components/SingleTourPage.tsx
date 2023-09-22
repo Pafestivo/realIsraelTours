@@ -46,7 +46,7 @@ const SingleTourPage = ({
       <div className="full-size-container">
         <h1>{promoTitle}</h1>
         {promoDescription.map((infoBlock: string) => {
-          return <p>{infoBlock}</p>;
+          return <p key={infoBlock}>{infoBlock}</p>;
         })}
       </div>
 
@@ -55,7 +55,7 @@ const SingleTourPage = ({
           <div className="chapter-info">
             <h1>{chapter1Title}</h1>
             {chapter1Info?.map((infoBlock: string) => {
-              return <p>{infoBlock}</p>;
+              return <p key={infoBlock}>{infoBlock}</p>;
             })}
           </div>
           <div className="image-container">
@@ -86,7 +86,7 @@ const SingleTourPage = ({
           <div className="chapter-info">
             <h1>{chapter2Title}</h1>
             {chapter2Info.map((infoBlock: string) => {
-              return <p>{infoBlock}</p>;
+              return <p key={infoBlock}>{infoBlock}</p>;
             })}
           </div>
         </section>
@@ -96,7 +96,7 @@ const SingleTourPage = ({
         <section className="conclusion">
           <h1>{conclusionTitle}</h1>
           {conclusionInfo.map((infoBlock: string) => {
-            return <p>{infoBlock}</p>;
+            return <p key={infoBlock}>{infoBlock}</p>;
           })}
         </section>
       )}

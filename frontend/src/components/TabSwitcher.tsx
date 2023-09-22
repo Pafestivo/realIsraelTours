@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "@/styles/tabSwitcher.css";
 import { TabItem } from "@/app/utils/types";
 import Image from "next/image";
@@ -10,6 +10,10 @@ interface TabSwitcherProps {
 
 const TabSwitcher = ({ array }: TabSwitcherProps) => {
   const [activeTab, setActiveTab] = useState(array[0]);
+
+  useEffect(() => {
+    console.log(activeTab);
+  }, [activeTab]);
 
   return (
     <div className="tabs-container">
