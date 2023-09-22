@@ -22,6 +22,10 @@
   transform: scale(1.1)
 }
 
+.tripCard h2 {
+  color: white;
+}
+
 .tripCard p {
   align-self: flex-start;
 }

@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image";
 
-export interface Destination {
+export interface TabItem {
   name: string;
   description: string;
   image: string;

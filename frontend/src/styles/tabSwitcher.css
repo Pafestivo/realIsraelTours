@@ -1,19 +1,15 @@
-.destinations-div {
+.tabs-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 20px;
   justify-self: center;
-  color: #4b5e5b;
+  color: var(--dark-text-color);
   height: max-content;
 }
 
-.destinations-div h1 {
-  color: #4b5e5b;
-}
-
-.destinations-options {
+.tabs {
   display: flex;
   width: 100vw;
   flex-wrap: wrap;
@@ -22,62 +18,63 @@
   gap: 20px;
 }
 
-.destinations-options > * {
+.tabs > * {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f8f8;
+  background-color: #d8d4d4;
   width: 160px;
   height: 45px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.destinations-options > *:hover {
+.tabs > *:hover {
   background-color: #719e8b;
   color: white;
 }
 
 .activeTab {
-  background-color: #4b5e5b;
+  background-color: var(--main-bg-color);
   color: white;
 }
 
 .activeTab:hover {
-  background-color: #4b5e5b;
+  background-color: var(--main-bg-color);
   color: white;
   cursor: default;
 }
 
-.Destination-info {
+.tab-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
 
-.Destination-info img {
+.tab-info img {
   width: 500px;
   height: 500px;
 }
 
-.Destination-info h1 {
-  font-size: 2em;
+.tab-info h1 {
+  font-size: 1.8em;
   margin-bottom: 10px;
 }
 
-.Destination-info p {
-  font-size: 1.2em;
+.tab-info p {
+  font-size: 1.1em;
+  line-height: 30px;
   white-space: pre-line;
   text-align: left;
 }
 
 @media screen and (max-width: 768px) {
-  .Destination-info img {
+  .tab-info img {
     width: 300px;
     height: 300px;
   }
 
-  .Destination-info {
+  .tab-info {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -85,7 +82,7 @@
     gap: 40px;
   }
 
-  .Destination-info p {
+  .tab-info p {
     text-align: center;
   }
 }

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "@/styles/globals.css";
-import { roboto } from "@/app/fonts";
+import { abel } from "@/app/fonts";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Footer from "@/components/Footer";
+import MobileStickyFooter from "@/components/MobileStickyFooter";
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 export const metadata: Metadata = {
@@ -17,8 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <div style={{ overflowX: "hidden" }}>{children}</div>
+      <body className={abel.className}>
+        <div style={{ overflowX: "hidden" }}>
+          {children}
+          <Footer />
+          <MobileStickyFooter />
+        </div>
       </body>
     </html>
   );

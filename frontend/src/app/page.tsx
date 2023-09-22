@@ -2,17 +2,16 @@ import Header from "@/components/Header";
 import "@/styles/homePage.css";
 import BackgroundVideo from "@/components/BackgroundVideo";
 import ScrollArrow from "@/components/ScrollArrow";
-import TripCard from "@/components/TripCard";
-import Destinations from "@/components/Destinations";
 import CustomerReviews from "@/components/CustomerReviews";
 import TravelWithConfidence from "@/components/TravelWithConfidence";
-import Footer from "@/components/Footer";
-import MobileStickyFooter from "@/components/MobileStickyFooter";
 import AllTripCards from "@/components/AllTripCards";
+import { roboto } from "@/app/fonts";
+import TabSwitcher from "@/components/TabSwitcher";
+import { destinationsArray } from "./utils/DestinationsArray";
 
 export default function Home() {
   return (
-    <div>
+    <div className={roboto.className}>
       <Header currentlyActivePage="Home" />
       <div className="background-video-container">
         <div className="content">
@@ -65,7 +64,19 @@ export default function Home() {
 
         <section className="destinations">
           <div className="destination-container">
-            <Destinations />
+            <div className="remarkable-destinations-container">
+              <h1>Remarkable Destinations</h1>
+              <p>
+                Our travel experts build customized adventures, allowing you to
+                discover any of this compelling country’s awe-inspiring sites.
+                Whether you want to dive deep into history, religion, politics,
+                culture or outdoors adventure, we can advise you on which iconic
+                destinations to choose and build an experience in each tailored
+                to your interests. Describe your dream trip and we’ll configure
+                an itinerary that surpasses all your expectations.
+              </p>
+            </div>
+            <TabSwitcher array={destinationsArray} />
           </div>
         </section>
 
@@ -76,8 +87,6 @@ export default function Home() {
         <section className="travel-with-confidence-section">
           <TravelWithConfidence />
         </section>
-        <Footer />
-        <MobileStickyFooter />
       </div>
     </div>
   );

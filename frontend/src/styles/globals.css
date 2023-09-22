@@ -1,7 +1,9 @@
 :root {
   --main-bg-color: #4b5e5b;
   --main-title-color: #F1F1E6;
-  --main-text-color: #F1F1E6;
+  --dark-title-color: #3d4c4a;
+  --main-text-color: #c9c9c6;
+  --dark-text-color: #4b5e5b;
   --accent-orange: #ffc03f;
   --hover-accent-orange: #bd7e00;
 }
@@ -16,6 +18,10 @@ body {
   font-size: 18px;
   background-color: var(--main-bg-color);
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -34,7 +40,7 @@ section {
 }
 
 .mobile-only {
-  display: none !important; 
+  display: none; 
 }
 
 .desktop-only {
@@ -47,14 +53,16 @@ section {
 
 /* opener to every page */
 .page-cover-photo {
+  position: relative;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 }
 
 .page-cover-photo img {
   width: 100vw;
-  height: 100vh;
-  position: absolute;
+  height: auto;
+  min-height: 100vh;
 }
 
 .page-cover-photo > :first-child {

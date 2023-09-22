@@ -5,7 +5,7 @@
 
 .travel-with-confidence-container h1,
 .travel-with-confidence-container p {
-  color: #4b5e5b;
+  color: var(--dark-text-color);
 }
 
 .travel-with-confidence-container h1 {
@@ -37,7 +37,7 @@
   width: max-content;
   column-gap: 50px;
   margin: 30px auto;
-  background-color: #4b5e5b;
+  background-color: var(--dark-text-color);
   border-radius: 10px;
   padding: 20px;
 }
