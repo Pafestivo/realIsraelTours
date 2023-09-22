@@ -98,7 +98,7 @@ button {
 }
 
 /* Media query for very large screens */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1920px) {
   .navbar {
     font-size: 1.5em;
   }

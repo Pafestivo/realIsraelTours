@@ -18,8 +18,8 @@ const ReligiousAndEducational = () => {
 
       <section
         style={{
-          margin: "0 auto",
-          background: "white",
+          margin: "0",
+          backgroundColor: "white",
         }}
       >
         <TabSwitcher array={educationalTripsArray} />

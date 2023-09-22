@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (: 1440px) {
   .trip-types {
     width: 1800px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
