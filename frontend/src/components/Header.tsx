@@ -57,7 +57,7 @@ const Header = ({ currentlyActivePage }: HeaderProps) => {
         </Link>
         <Link
           className={currentlyActivePage === "Gallery" ? "activated" : ""}
-          href="/"
+          href="/gallery"
         >
           Gallery
         </Link>

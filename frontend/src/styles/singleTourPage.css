@@ -11,7 +11,8 @@
 }
 
 .full-size-container {
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
+  background-color: #536864;
   width: 100vw;
   height: max-content;
   min-height: 100vh;
@@ -116,14 +117,14 @@
 @media screen and (min-width: 1920px) {
   .single-tour-div {
     font-size: 20px;
-    background-color: white;
-    background-image: url('../../public/dead-sea-compressed.jpg');
+    /* background-color: white; */
+    /* background-image: url('../../public/dead-sea-compressed.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
 
- .page-cover-photo img {
+ /* .page-cover-photo img {
     display: none;
- }
+ } */
 }
