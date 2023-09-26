@@ -39,7 +39,7 @@ const ContactUs = () => {
             />
           </div>
 
-          <form action="https://formspree.io/f/mbjvzvbz" method="POST">
+          <form action="https://formspree.io/f/xwkdrddq" method="POST">
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
             <input type="phone" name="phone" placeholder="Phone" required />
