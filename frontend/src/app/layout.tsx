@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={abel.className}>
-        <div className="app-container">
+        <div style={{ overflowX: "hidden" }}>
           {children}
           <Footer />
           <MobileStickyFooter />
