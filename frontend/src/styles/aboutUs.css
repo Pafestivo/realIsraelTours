@@ -1,0 +1,30 @@
+.second-section {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  font-size: 1.2em;
+  color: var(--main-text-color);
+}
+
+.second-section h1 {
+  color: var(--main-title-color);
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+@media screen and (max-width: 768px) {
+  .second-section {
+    padding: 0 40px;
+  }
+}
+

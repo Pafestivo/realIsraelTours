@@ -63,13 +63,13 @@ const Header = ({ currentlyActivePage }: HeaderProps) => {
         </Link>
         <Link
           className={currentlyActivePage === "AboutUs" ? "activated" : ""}
-          href="/"
+          href="/about-us"
         >
           About Us
         </Link>
         <Link
           className={currentlyActivePage === "ContactUs" ? "activated" : ""}
-          href="/"
+          href="/contact-us"
         >
           Contact Us
         </Link>

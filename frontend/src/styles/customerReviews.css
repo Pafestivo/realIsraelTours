@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   max-height: 400px;
-  width: 90vw;
+  width: 90%;
   margin: 50px auto;
 }
 
@@ -33,7 +33,7 @@
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   max-height: 600px;
-  width: 90vw;
+  width: 90%;
   gap: 20px;
   transition: scroll-left 0.3s ease-in-out;
   overflow-y: hidden;
