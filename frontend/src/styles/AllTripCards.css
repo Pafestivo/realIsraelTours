@@ -4,6 +4,7 @@
   row-gap: 80px;
   column-gap: 50px;
   justify-content: center;
+  height: max-content;
   align-items: center;
   place-items: center;
 }
