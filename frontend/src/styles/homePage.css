@@ -114,7 +114,8 @@ h1 {
 }
 
 .trip-types-section {
-  width: 80%;
+  width: 80vw;
+  max-width: 1400px;
   display: flex;
   justify-content: center;
   align-items: center;
