@@ -9,15 +9,20 @@ const ImageWithLoading = ({ src, alt }: { src: string; alt: string }) => {
 
   return (
     <div>
-      {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : null}
-      <Image
-        src={src}
-        alt={alt}
-        width={500}
-        height={500}
-        onLoad={() => setLoading(false)}
-        style={loading ? { display: "none" } : {}}
-      />
+      {loading ? (
+        <FontAwesomeIcon icon={faSpinner} spin />
+      ) : (
+        <Image
+          src={src}
+          alt={alt}
+          width={500}
+          height={500}
+          onLoad={() => {
+            setLoading(false);
+            console.log("loaded!");
+          }}
+        />
+      )}
     </div>
   );
 };
