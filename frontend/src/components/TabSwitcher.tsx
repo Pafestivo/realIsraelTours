@@ -3,9 +3,6 @@ import React, { useEffect, useState } from "react";
 import "@/styles/tabSwitcher.css";
 import { TabItem } from "@/app/utils/types";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-import ImageWithLoading from "./ImageWithLoading";
 
 interface TabSwitcherProps {
   array: { name: string; description: string; image: string }[];
@@ -18,10 +15,6 @@ const TabSwitcher = ({ array }: TabSwitcherProps) => {
     console.log(activeTab);
   }, [activeTab]);
 
-  const handleTabClick = (item: TabItem) => {
-    setActiveTab(item);
-  };
-
   return (
     <div className="tabs-container">
       <div className="tabs">
@@ -31,7 +24,7 @@ const TabSwitcher = ({ array }: TabSwitcherProps) => {
             <div
               key={item.name}
               className={activeTab === item ? "activeTab" : ""}
-              onClick={() => handleTabClick(item)}
+              onClick={() => setActiveTab(item)}
             >
               {item.name}
             </div>
@@ -43,7 +36,12 @@ const TabSwitcher = ({ array }: TabSwitcherProps) => {
           <h1>{activeTab.name}</h1>
           <p>{activeTab.description}</p>
         </div>
-        <ImageWithLoading src={activeTab.image} alt={activeTab.name} />
+        <Image
+          src={activeTab.image}
+          alt={activeTab.name}
+          width={500}
+          height={500}
+        />
       </div>
     </div>
   );
